@@ -79,6 +79,7 @@ const productsSlice = createSlice({
       let filtered = state.allProducts;
 
       if (state.filters.name) {
+        console.log("changing");
         filtered = filtered.filter((item) =>
           item.title.toLowerCase().includes(state.filters.name.toLowerCase())
         );

@@ -7,7 +7,7 @@ import { Button, Popconfirm, Typography } from "antd";
 import { QuestionCircleOutlined } from "@ant-design/icons";
 import { useActions } from "../../Store/useActions";
 const AllProducts = () => {
-  const { allProducts, selectedProducts } = useSelector(
+  const { filteredProducts, selectedProducts } = useSelector(
     (state) => state.products
   );
 
@@ -19,7 +19,7 @@ const AllProducts = () => {
       <div className="productCount">
         <Typography.Title
           level={5}
-        >{`Total Products: ${allProducts.length}`}</Typography.Title>
+        >{`Total Products: ${filteredProducts.length}`}</Typography.Title>
         {selectedProducts.length > 0 && (
           <Popconfirm
             title="Delete selected Products?"
@@ -42,7 +42,7 @@ const AllProducts = () => {
         )}
       </div>
       <div className="allProducts">
-        {allProducts.map((product) => (
+        {filteredProducts.map((product) => (
           <Product key={product.id} {...product} />
         ))}
       </div>

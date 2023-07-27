@@ -1,0 +1,12 @@
+.allProducts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 2rem;
+}
+
+.productCount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}

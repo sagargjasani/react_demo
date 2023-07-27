@@ -1,0 +1,17 @@
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  margin-bottom: 2rem;
+  img {
+    width: 50px;
+  }
+
+  .navlinks {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+}

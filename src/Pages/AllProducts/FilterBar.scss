@@ -1,0 +1,10 @@
+.FilterBar {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100px;
+  margin-bottom: 2rem;
+  .ant-select {
+    width: 150px;
+  }
+}
